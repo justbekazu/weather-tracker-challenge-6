@@ -1,7 +1,12 @@
 var searchButton = $(".searchBtn");
 var apiKey = "54a22dc1f9964b76e99bfaae21f5e3e9";
+console.log(searchButton);
 
-searchButton.onCLick(function () {
+// $( "#dataTable tbody tr" ).on( "click", function() {
+//   console.log( $( this ).text() );
+// });
+
+searchButton.on("click", function () {
   var searchInput = $(".searchInput").val();
   var urlFiveDay =
     "https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}" +
